@@ -25,5 +25,12 @@ I have referred this guide to create a guide for Windows OS.
   Compile(F8): `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -O2 -Wno-unused-result`<br />
   Build (F9): `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -fsanitize=undefined -fsanitize-undefined-trap-on-error -D_GLIBCXX_DEBUG`<br />
   If you get compilation errors, try changing from c++17 to c++14 and/or removing sanitizers (one fsanitize flags).<br />
-  As `-fsanitize=address` is not working in MinGW for some reason So, I have not included it. Let me know if anyone has solution for this.<br />
+  As `-fsanitize=address` is not working in MinGW for some odd reasons. So, I have not included it. Let me know if anyone has solution for this.<br />
 5. If your computer beeps after compilation, unmark `Beep on errors` in Preferences -> General -> Miscellaneous.
+
+If you find that to insert dot(.) or comma(,), you need to press button two times and then press backspace to print symbols.<br />
+I have a fix for you.<br />
+
+Go to `Settings -> Time & Language -> Language`. Add a preferred language as English(United States). Select all it's options. Download it and keep it as first preference.<br />
+Then Go to `Settings -> Devices -> Typing -> Advanced Keyboard Settings`. Set Override for default input method as English(United States).<br />
+Resolved
